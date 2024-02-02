@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="pt-[100px] bg-white relative h-screen">
+    <img src="{% static 'images/bg.svg' %}" alt="" srcset="" class="absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2">
+    <div class="w-full max-w-[1400px] mx-auto px-4">
+        <div class="flex flex-col space-y-6 items-center pt-20">
+            <div class="max-w-[700px] flex flex-col space-y-2 z-10">
+                <h1 class="text-[#009193] font-bold text-xl">About Task Buddy - Your Project Management Partner</h1>
+                <div>
+                    <p class="text-gray-700 font-light text-lg text-justify">At Task Buddy, we're passionate about simplifying project management for small teams. We understand the challenges that come with juggling tasks, meeting deadlines, and fostering collaboration, and that's why we created Task Buddy – your ultimate project management solution.</p>
+                </div>
+            </div>
+            <div class="max-w-[700px] flex flex-col space-y-2 z-10">
+                <h1 class="text-[#009193] font-bold text-xl">Our Mission</h1>
+                <div>
+                    <p class="text-gray-700 font-light text-lg text-justify">Our mission is to empower small project teams to achieve their goals with ease. We believe that no project is too small for effective project management. Task Buddy is designed to streamline your project workflows and keep your team focused on what matters most.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
